@@ -12,5 +12,6 @@ Add 1 billion double using array | 1.190634 sec
 Add 2 billion double using array | 2.418821 sec
 Add 1 billion Double using array | 5.968124 sec
 Add 2 billion Double using array | 10.65095 sec
-Add 1 billion BigDecimal using array | 9.991112 sec
-Add 2 billion BigDecimal using array | 23.53512 sec
+Add .5 billion BigDecimal using array | 4.946029 sec
+Add 1 billion BigDecimal using array | 10.054218 sec
+Add 2 billion BigDecimal using array | 22.421113 sec
