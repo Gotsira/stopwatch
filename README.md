@@ -2,7 +2,7 @@
 I ran the tasks on a Asus Gaming Laptop, and got
 these results:
 
-Task | Tme
+Task | Time
  --------------------------------------|-------:
 Append 50,000 chars to String | 1.340294 sec
 Append 100,000 chars to String | 3.310943 sec
@@ -15,3 +15,6 @@ Add 2 billion Double using array | 10.65095 sec
 Add .5 billion BigDecimal using array | 4.946029 sec
 Add 1 billion BigDecimal using array | 10.054218 sec
 Add 2 billion BigDecimal using array | 22.421113 sec
+
+##Explanation of Results
+
