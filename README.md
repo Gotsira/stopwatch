@@ -1,7 +1,9 @@
 # Stopwatch tasks by Sirasath Piyapootinun (5910546465)
-I ran the tasks on a Asus Gaming Laptop, and got these results:
-Task | Time
----- | ----
+I ran the tasks on a Asus Gaming Laptop, and got
+these results:
+
+Task | Tme
+ --------------------------------------|-------:
 Append 50,000 chars to String | 1.340294 sec
 Append 100,000 chars to String | 3.310943 sec
 Append 50,000 chars to StringBuilder | 0.001792 sec
