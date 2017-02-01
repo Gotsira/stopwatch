@@ -12,10 +12,11 @@ public class AppendString implements Runnable {
 	private final char CHAR = 'a';
 	
 	/**
-	 * Initiate the AppendString with a specified size given by the user.
+	 * Initialize the AppendString with a specified size given by the user.
 	 * The size is the final length of the String.
 	 * 
-	 * @param size is the final length of the String.
+	 * @param size 
+	 *             is the final length of the String.
 	 */
 	public AppendString(int size) {
 		this.size = size;

@@ -1,12 +1,21 @@
 package stopwatch;
 
+/**
+ * TaskTimer class will measure the elapsed time in seconds of a specific task.
+ * 
+ * @author Sirasath Piyapootinun
+ *
+ */
+
 public class TaskTimer {
-//	private static Stopwatch watch;
 	
-//	public TaskTimer() {
-//		watch = new Stopwatch();
-//	}
-	
+	/**
+	 * Runs a task, measures and prints its running time to the console.
+	 * 
+	 * @param runnable
+	 *            is a task to be run.
+	 * 
+	 */
 	public static void measureAndPrint(Runnable runnable) {
 		Stopwatch watch = new Stopwatch();
 		watch.start();
