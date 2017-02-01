@@ -24,3 +24,10 @@ memory so appending 100,000 chars to a String take more than 2X the time to appe
 
 ###2. Why is appending to StringBuilder so much different than appending to String? What is happening to the String?
 
+Everytime you perform ```+=``` on a String, a new String would be created and it would consume time and memory.
+But in a StringBuilder, it will not create a new String when you perform ```+=``` because the StringBuilder has a char 
+array inside it and requires no extra memory because it already took the memory for 16 char but it will allocate more memories 
+only if the String exceeds its capacity. Its size will automatically increased with its capacity is exceeded.
+
+###3. Explain difference in time to sum double, Double, and BigDecimal. Which is faster and why?
+
