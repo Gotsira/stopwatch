@@ -31,3 +31,5 @@ only if the String exceeds its capacity. Its size will automatically increased w
 
 ###3. Explain difference in time to sum double, Double, and BigDecimal. Which is faster and why?
 
+Double being a wrapper class takes more time to add than a double as double is a primitive type and contains no methods and attributes,
+while on the other hand, Double contains attributes and methods and thus takes more time. But BigDecimal containg alot more attributes and methods compare to Double takes the most time.
