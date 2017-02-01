@@ -1,15 +1,31 @@
 package stopwatch;
 
+/**
+ * A task that appends chars to StringBuilder.
+ * 
+ * @author Sirasath Piyapootinun
+ *
+ */
+
 public class AppendStringBuilder implements Runnable {
 	private int size;
+	private final char CHAR = 'a';
 	
+	/**
+	 * Initiate the AppendStringBuilder with a specified size given by the user.
+	 * The size is the final length of the String.
+	 * 
+	 * @param size is the final length of the String.
+	 */
 	public AppendStringBuilder(int size) {
 		this.size = size;
 	}
 	
+	/**
+	 * Add char 'a' to the StringBuilder until it reaches the final size.
+	 */
 	@Override
 	public void run() {
-		final char CHAR = 'a';
 		StringBuilder builder = new StringBuilder(); 
 		int k = 0;
 		while(k++ < size) {
@@ -19,6 +35,12 @@ public class AppendStringBuilder implements Runnable {
 		String result = builder.toString();
 	}
 	
+	/**
+	 * Return the Task's description.
+	 * 
+	 * @return the description of the task
+	 * 
+	 */
 	@Override
 	public String toString() {
 		return String.format("Append %,d chars to StringBuilder\n", size);
