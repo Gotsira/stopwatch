@@ -11,7 +11,7 @@ import java.math.BigDecimal;
 public class SumBigDecimal implements Runnable {
 	private int size;
 	static final int ARRAY_SIZE = 500000;
-	
+	private BigDecimal[] values;
 	/**
 	 * Initialize SumBigDecimalTask by the amount.
 	 * 
@@ -27,7 +27,7 @@ public class SumBigDecimal implements Runnable {
 	 */
 	@Override
 	public void run() {
-		BigDecimal[] values = new BigDecimal[ARRAY_SIZE];
+		values = new BigDecimal[ARRAY_SIZE];
 		for(int i=0; i<ARRAY_SIZE; i++) {
 			values[i] = new BigDecimal(i+1);
 		}

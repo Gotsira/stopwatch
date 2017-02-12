@@ -10,6 +10,7 @@ package stopwatch;
 public class SumDoublePrimitive implements Runnable {
 	private int size;
 	static final int ARRAY_SIZE = 500000;
+	private double[] values;
 	
 	/**
 	 * Initialize SumDoublePrimitive by the amount.
@@ -27,7 +28,7 @@ public class SumDoublePrimitive implements Runnable {
 	@Override
 	public void run() {
 		// create array of values to add before we start the timer
-		double[] values = new double[ARRAY_SIZE];
+		values = new double[ARRAY_SIZE];
 		for(int k=0; k < ARRAY_SIZE; k++) {
 			values[k] = k+1;
 		}
